@@ -1,0 +1,5 @@
+[[redirects]]
+  from="/qr1"
+  to="/"
+  status = 301
+  force = true

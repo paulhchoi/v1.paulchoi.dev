@@ -1,18 +1,21 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
+import { Link } from 'gatsby';
+import PropTypes from 'prop-types';
+import React from 'react';
+
+// color generation: https://coolors.co/413c58-a3c4bc-bfd7b5-e7efc5-f2dda4
 
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
+      background: `#657153`,
+      height: '3rem',
+      marginBottom: `1rem`,
     }}
   >
     <div
       style={{
         margin: `0 auto`,
-        maxWidth: 960,
+        maxWidth: '75rem',
         padding: `1.45rem 1.0875rem`,
       }}
     >
@@ -20,23 +23,23 @@ const Header = ({ siteTitle }) => (
         <Link
           to="/"
           style={{
-            color: `white`,
+            color: `#BFD7B5`,
             textDecoration: `none`,
           }}
         >
-          {siteTitle}
+          {/*{siteTitle}*/}
         </Link>
       </h1>
     </div>
   </header>
-)
+);
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
-}
+};
 
 Header.defaultProps = {
   siteTitle: ``,
-}
+};
 
-export default Header
+export default Header;
