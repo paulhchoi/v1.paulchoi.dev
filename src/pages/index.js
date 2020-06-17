@@ -32,8 +32,8 @@ const MainHeader = () => {
   return (
     <div className="flex flex-col w-full sm:flex-row items-center">
       <div className="w-full h-full sm:w-2/3 text-center sm:text-left pr-0 sm:pr-12">
-        <h1 className="text-4xl font-medium">Hi I'm Paul!</h1>
-        <h2 className="text-2xl font-normal text-gray-500">
+        <h1 className="text-5xl md:text-6xl serif tracking-tight font-bold">Hi I'm Paul!</h1>
+        <h2 className="text-2xl tracking-wider text-gray-500">
           I'm a Software Engineer born and raised in Philadelphia.
         </h2>
       </div>
@@ -61,8 +61,8 @@ const Works = () => {
 
   return (
     <div className="mt-8 text-left w-full max-screen-md">
-      <div className="font-medium text-lg text-gray-500 leading-loose">
-        Stuff I've worked on
+      <div className="sans-serif font-medium tracking-wide text-lg text-gray-500 mb-2">
+        Stuff I'm working on
       </div>
       <div>{linksGen}</div>
     </div>
@@ -121,15 +121,15 @@ const Intro = () => {
   );
 };
 
-const BaseLink = ({ to, children }) => {
+export const BaseLink = ({ to, children, ...other }) => {
   return (
     <a
       href={to}
       target="_blank"
       rel="noopener noreferrer"
-      className="underline font-medium hover:opacity-75 transition duration-150"
+      className="underline font-bold hover:opacity-75 transition duration-150 "
     >
-      {children}
+      <span {...other}>{children}</span>
     </a>
   );
 };

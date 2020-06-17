@@ -19,6 +19,7 @@
     "gatsby-plugin-offline": "^3.2.9",
     "gatsby-plugin-postcss": "^2.1.19",
     "gatsby-plugin-react-helmet": "^3.1.0",
+    "gatsby-plugin-react-svg": "^3.0.0",
     "gatsby-plugin-sharp": "^2.2.2",
     "gatsby-source-filesystem": "^2.1.2",
     "gatsby-transformer-sharp": "^2.2.1",
@@ -28,6 +29,7 @@
     "react-dom": "^16.8.6",
     "react-helmet": "^6.1.0",
     "react-icons": "^3.10.0",
+    "react-useanimations": "^1.2.13",
     "tailwindcss": "^1.1.4",
     "typeface-ibm-plex-serif": "^0.0.75",
     "typeface-source-serif-pro": "^1.1.3"

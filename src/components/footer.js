@@ -1,14 +1,5 @@
 import React from 'react';
-import { IconContext } from 'react-icons';
-import {
-  FaFacebook,
-  FaLinkedin,
-  FaInstagram,
-  FaTwitter,
-  FaGithub,
-  FaEnvelope,
-  FaGlobe,
-} from 'react-icons/fa';
+import { FaLinkedin, FaTwitter, FaGithub, FaEnvelope } from 'react-icons/fa';
 
 const Footer = () => {
   const links = [

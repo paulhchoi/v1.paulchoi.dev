@@ -1,3 +1,43 @@
 @tailwind base;
+
+@font-face {
+  font-family: 'Source Serif Pro';
+  src: url('../static/fonts/source-serif-pro-release/OTF/SourceSerifPro-Regular.otf')
+    format('opentype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Source Serif Pro';
+  src: url('../static/fonts/source-serif-pro-release/OTF/SourceSerifPro-Semibold.otf')
+    format('opentype');
+  font-weight: 500;
+}
+
+html {
+  font-family: -apple-system, BlinkMacSystemFont, San Francisco, Segoe UI,
+    Roboto, Helvetica Neue, sans-serif;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  text-size-adjust: 100%;
+
+  text-rendering: optimizeLegibility;
+
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    font-family: inherit;
+  }
+}
+
+.serif {
+  font-family: 'Source Serif Pro', -apple-system, BlinkMacSystemFont,
+    San Francisco, Segoe UI, Roboto, Helvetica Neue, sans-serif;
+}
+
 @tailwind components;
 @tailwind utilities;

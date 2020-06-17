@@ -26,7 +26,7 @@ module.exports = {
         background_color: `#C6F6D5`,
         theme_color: `#C6F6D5`,
         display: `minimal-ui`,
-        icon: `src/images/sq_2018_audio_lrg.jpg`, // This path is relative to the root of the site.
+        icon: `src/static/logo/favicon.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-netlify`,
@@ -34,5 +34,13 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
     'gatsby-plugin-netlify-cache',
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /\.inline\.svg$/,
+        },
+      },
+    },
   ],
 };
