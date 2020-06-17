@@ -2,14 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0036da46-d464-4495-8463-d057d0b7095d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_redirects" beforeDir="false" afterPath="$PROJECT_DIR$/_redirects" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netlify.toml" beforeDir="false" afterPath="$PROJECT_DIR$/netlify.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gatsby-browser.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-browser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/gatsby-astronaut.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/gatsby-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -75,26 +89,38 @@
       <updated>1579871917697</updated>
       <workItem from="1579871919027" duration="5415000" />
       <workItem from="1581992305424" duration="365000" />
-      <workItem from="1581994058858" duration="9411000" />
+      <workItem from="1581994058858" duration="10138000" />
+      <workItem from="1592368078606" duration="7544000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/node_modules/simple-git/src/lib/runners/promise.js" />
+        <option value="$PROJECT_DIR$/node_modules/simple-git/src/lib/runners/promise.js.map" />
+        <option value="$PROJECT_DIR$/node_modules/simple-git/src/lib/runners/promise.d.ts" />
+      </list>
+    </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="578" y="290" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1581994495069">
-      <screen x="0" y="23" width="1680" height="1027" />
+    <state x="579" y="326" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1592369974991">
+      <screen x="0" y="23" width="1680" height="987" />
     </state>
-    <state x="578" y="290" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-120.-1177.1920.1177/0.23.1680.1027@0.23.1680.1027" timestamp="1581994495069" />
-    <state x="506" y="293" width="667" height="486" key="find.popup" timestamp="1581996979487">
-      <screen x="0" y="23" width="1680" height="1027" />
+    <state x="579" y="326" key="#com.intellij.fileTypes.FileTypeChooser/-460.-1417.2560.1417/0.23.1680.987@0.23.1680.987" timestamp="1592369974991" />
+    <state x="519" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1592368174415">
+      <screen x="0" y="23" width="1680" height="987" />
     </state>
-    <state x="506" y="293" width="667" height="486" key="find.popup/-120.-1177.1920.1177/0.23.1680.1027@0.23.1680.1027" timestamp="1581996979487" />
-    <state x="505" y="250" width="670" height="676" key="search.everywhere.popup" timestamp="1582000071305">
-      <screen x="0" y="23" width="1680" height="1027" />
+    <state x="519" y="349" key="com.intellij.ide.util.TipDialog/-460.-1417.2560.1417/0.23.1680.987@0.23.1680.987" timestamp="1592368174415" />
+    <state x="506" y="273" width="667" height="486" key="find.popup" timestamp="1592369383398">
+      <screen x="0" y="23" width="1680" height="987" />
     </state>
-    <state x="505" y="250" width="670" height="676" key="search.everywhere.popup/-120.-1177.1920.1177/0.23.1680.1027@0.23.1680.1027" timestamp="1582000071305" />
+    <state x="506" y="273" width="667" height="486" key="find.popup/-460.-1417.2560.1417/0.23.1680.987@0.23.1680.987" timestamp="1592369383398" />
+    <state x="505" y="167" width="670" height="676" key="search.everywhere.popup" timestamp="1592373863592">
+      <screen x="0" y="23" width="1680" height="987" />
+    </state>
+    <state x="505" y="167" width="670" height="676" key="search.everywhere.popup/-460.-1417.2560.1417/0.23.1680.987@0.23.1680.987" timestamp="1592373863592" />
   </component>
   <component name="masterDetails">
     <states>

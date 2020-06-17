@@ -10,7 +10,10 @@ const IndexPage = () => (
     <SEO title="Home" />
     <Wrapper>
       <MainHeader />
-      <Body />
+
+      <Intro />
+
+      <Works />
     </Wrapper>
   </Layout>
 );
@@ -19,7 +22,7 @@ export default IndexPage;
 
 const Wrapper = ({ children }) => {
   return (
-    <div className="flex flex-col max-w-lg h-full mx-auto items-center justify-center">
+    <div className="flex flex-col max-w-screen-md h-full mx-auto items-center justify-center">
       {children}
     </div>
   );
@@ -28,10 +31,10 @@ const Wrapper = ({ children }) => {
 const MainHeader = () => {
   return (
     <div className="flex flex-col w-full sm:flex-row items-center">
-      <div className="w-full h-full sm:w-2/3 text-center sm:text-left">
-        <h1 className="text-4xl font-medium">Paul Choi</h1>
-        <h2 className="text-2xl font-normal opacity-50">
-          Software Engineer in Philadelphia
+      <div className="w-full h-full sm:w-2/3 text-center sm:text-left pr-0 sm:pr-12">
+        <h1 className="text-4xl font-medium">Hi I'm Paul!</h1>
+        <h2 className="text-2xl font-normal text-gray-500">
+          I'm a Software Engineer born and raised in Philadelphia.
         </h2>
       </div>
       <div className="w-1/2 mt-8 rounded-full overflow-hidden">
@@ -41,12 +44,11 @@ const MainHeader = () => {
   );
 };
 
-const Body = () => {
+const Works = () => {
   const links = [
-    { text: 'linkedin', slug: 'https://www.linkedin.com/in/paulhchoi' },
-    { text: 'github', slug: 'https://github.com/paulhchoi' },
-    { text: 'email', slug: 'mailto:pchoi789@gmail.com' },
     { text: 'metrophilly.org', slug: 'https://metrophilly.org' },
+    { text: 'pfc.us', slug: 'https://pfc.us' },
+    { text: 'hackermd.cc', slug: 'https://hackermd.netlify.app' },
   ];
 
   const linksGen = [];
@@ -57,7 +59,14 @@ const Body = () => {
     ),
   );
 
-  return <div className="w-full py-8">{linksGen}</div>;
+  return (
+    <div className="mt-8 text-left w-full max-screen-md">
+      <div className="font-medium text-lg text-gray-500 leading-loose">
+        Stuff I've worked on
+      </div>
+      <div>{linksGen}</div>
+    </div>
+  );
 };
 
 const ButtonGen = ({ text, slug }) => {
@@ -65,7 +74,7 @@ const ButtonGen = ({ text, slug }) => {
   const mSlug = slug || '';
 
   return (
-    <a href={mSlug}>
+    <a href={mSlug} target="_blank" rel="noopener noreferrer">
       <StyleButton color="green">
         <div className="flex flex-row justify-center items-center p-1">
           <span className="inline-block">{mText}</span>
@@ -74,6 +83,53 @@ const ButtonGen = ({ text, slug }) => {
           {/*  </span>*/}
         </div>
       </StyleButton>
+    </a>
+  );
+};
+
+const Intro = () => {
+  return (
+    <div className="py-12 text-left w-full max-screen-md text-lg text-gray-800 leading-8">
+      <p className="mb-6">
+        I've graduated from{' '}
+        <BaseLink to={'https://temple.edu'}>Temple University</BaseLink> in 2019
+        with a BS in Computer Science and a minor in Data Science, and I'm
+        currently working as an Android and iOS developer for{' '}
+        <BaseLink to={'https://www.qurateretailgroup.com/'}>
+          {' '}
+          Qurate Retail Group
+        </BaseLink>{' '}
+        (QVC and HSN's parent company).
+      </p>
+      <p className="mb-6">
+        Since 2016, I've been the Director of Digital Technologies for{' '}
+        <BaseLink to={'https://metrophilly.org'}>Metro Church</BaseLink>, based
+        in Philadelphia, PA where I work with a great team to help advance our
+        digital strategies, tools, and experiences through data-driven
+        approaches.
+      </p>
+      <p className="mb-6">
+        Every August, you can find me volunteering on the operations and tech
+        team for <BaseLink to={'https://pfc.us'}>Pioneers For Christ</BaseLink>,
+        a 2-week long summer camp for elementary-to-high school students.
+      </p>
+      <p>
+        If you'd like to get in touch with me, feel free to send me an{' '}
+        <BaseLink to={'mailto:paul@paulchoi.dev'}>email</BaseLink>.
+      </p>
+    </div>
+  );
+};
+
+const BaseLink = ({ to, children }) => {
+  return (
+    <a
+      href={to}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="underline font-medium hover:opacity-75 transition duration-150"
+    >
+      {children}
     </a>
   );
 };

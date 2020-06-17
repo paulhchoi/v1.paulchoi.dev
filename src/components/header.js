@@ -5,33 +5,17 @@ import React from 'react';
 // color generation: https://coolors.co/413c58-a3c4bc-bfd7b5-e7efc5-f2dda4
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `#657153`,
-      height: '3rem',
-      marginBottom: `1rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: '75rem',
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `#BFD7B5`,
-            textDecoration: `none`,
-          }}
-        >
-          {/*{siteTitle}*/}
-        </Link>
-      </h1>
+  <div className="mb-4">
+    <div className="max-w-screen-xl mx-auto">
+      <header className="inline-flex w-full px-4 py-8">
+        <div className="flex-1 font-medium">@pchoi789</div>
+        <div className="flex-grow" />
+        <div className="flex-shrink font-medium underline hover:opacity-75">
+          <a href="mailto:paul@paulchoi.dev">Email me</a>
+        </div>
+      </header>
     </div>
-  </header>
+  </div>
 );
 
 Header.propTypes = {

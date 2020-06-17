@@ -25,7 +25,7 @@ const Layout = ({ children }) => {
   `);
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen bg-gray-100">
       <Header siteTitle={data.site.siteMetadata.title} />
       <main className="p-4 flex-1">{children}</main>
       <Footer />
