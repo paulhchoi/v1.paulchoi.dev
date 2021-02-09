@@ -1,19 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0036da46-d464-4495-8463-d057d0b7095d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
-    </list>
+    <list default="true" id="0036da46-d464-4495-8463-d057d0b7095d" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ComposerSettings">
-    <execution>
-      <executable />
-    </execution>
+    <execution />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -38,11 +33,11 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1579877481248" />
@@ -71,6 +66,7 @@
       <recent name="$PROJECT_DIR$/src/images" />
     </key>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -86,42 +82,17 @@
       <workItem from="1581994058858" duration="10138000" />
       <workItem from="1592368078606" duration="7720000" />
       <workItem from="1592420052113" duration="5054000" />
+      <workItem from="1592448590069" duration="6000" />
+      <workItem from="1595828135723" duration="235000" />
+      <workItem from="1612827620116" duration="946000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
-    <option name="exactExcludedFiles">
-      <list>
-        <option value="$PROJECT_DIR$/node_modules/simple-git/src/lib/runners/promise.js" />
-        <option value="$PROJECT_DIR$/node_modules/simple-git/src/lib/runners/promise.js.map" />
-        <option value="$PROJECT_DIR$/node_modules/simple-git/src/lib/runners/promise.d.ts" />
-      </list>
-    </option>
+    <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="579" y="326" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1592369974991">
-      <screen x="0" y="23" width="1680" height="987" />
-    </state>
-    <state x="579" y="326" key="#com.intellij.fileTypes.FileTypeChooser/-460.-1417.2560.1417/0.23.1680.987@0.23.1680.987" timestamp="1592369974991" />
-    <state x="519" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1592420063091">
-      <screen x="0" y="23" width="1680" height="987" />
-    </state>
-    <state x="519" y="349" key="com.intellij.ide.util.TipDialog/-460.-1417.2560.1417/0.23.1680.987@0.23.1680.987" timestamp="1592368174415" />
-    <state x="519" y="349" key="com.intellij.ide.util.TipDialog/0.23.1680.987@0.23.1680.987" timestamp="1592420063091" />
-    <state x="506" y="273" width="667" height="486" key="find.popup" timestamp="1592424124924">
-      <screen x="0" y="23" width="1680" height="987" />
-    </state>
-    <state x="506" y="273" width="667" height="486" key="find.popup/-460.-1417.2560.1417/0.23.1680.987@0.23.1680.987" timestamp="1592369383398" />
-    <state x="506" y="273" width="667" height="486" key="find.popup/0.23.1680.987@0.23.1680.987" timestamp="1592424124924" />
-    <state x="505" y="167" width="670" height="676" key="search.everywhere.popup" timestamp="1592424523112">
-      <screen x="0" y="23" width="1680" height="987" />
-    </state>
-    <state x="505" y="167" width="670" height="676" key="search.everywhere.popup/-460.-1417.2560.1417/0.23.1680.987@0.23.1680.987" timestamp="1592373863592" />
-    <state x="505" y="167" width="670" height="676" key="search.everywhere.popup/0.23.1680.987@0.23.1680.987" timestamp="1592424523112" />
   </component>
   <component name="masterDetails">
     <states>

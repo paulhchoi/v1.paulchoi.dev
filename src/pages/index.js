@@ -33,7 +33,7 @@ const MainHeader = () => {
     <div className="flex flex-col w-full sm:flex-row items-center">
       <div className="w-full h-full sm:w-2/3 text-center sm:text-left pr-0 sm:pr-12">
         <h1 className="text-5xl md:text-6xl serif tracking-tight font-bold">Hi I'm Paul!</h1>
-        <h2 className="text-2xl tracking-wider text-gray-500">
+        <h2 className="text-2xl tracking-wider text-gray-600">
           I'm a Software Engineer born and raised in Philadelphia.
         </h2>
       </div>
@@ -48,7 +48,9 @@ const Works = () => {
   const links = [
     { text: 'metrophilly.org', slug: 'https://metrophilly.org' },
     { text: 'pfc.us', slug: 'https://pfc.us' },
-    { text: 'hackermd.cc', slug: 'https://hackermd.netlify.app' },
+    { text: 'QVC app (Android)', slug: 'https://play.google.com/store/apps/details?id=com.qvc' },
+    { text: 'QVC app (iOS)', slug: 'https://apps.apple.com/us/app/qvc-mobile-shopping-us/id340021813' },
+    // { text: 'hackermd.cc', slug: 'https://hackermd.netlify.app' }, // on hold
   ];
 
   const linksGen = [];
@@ -114,8 +116,9 @@ const Intro = () => {
         a 2-week long summer camp for elementary-to-high school students.
       </p>
       <p>
-        If you'd like to get in touch with me, feel free to send me an{' '}
-        <BaseLink to={'mailto:paul@paulchoi.dev'}>email</BaseLink>.
+        Learn more about me by checking out my {' '}
+        <BaseLink to={'https://www.linkedin.com/in/paulhchoi'}>LinkedIn</BaseLink>,
+        or by sending me an{' '}<BaseLink to={'mailto:paul@paulchoi.dev'}>email</BaseLink>.
       </p>
     </div>
   );
