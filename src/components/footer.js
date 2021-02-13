@@ -1,5 +1,7 @@
 import React from 'react';
 import { FaLinkedin, FaTwitter, FaGithub, FaEnvelope } from 'react-icons/fa';
+import { Icon } from './Icon/Icon';
+import UseAnimations from 'react-useanimations';
 
 const Footer = () => {
   const links = [
@@ -41,8 +43,13 @@ const Footer = () => {
   return (
     <footer>
       <div className="max-w-screen-xl mx-auto mt-8 py-8 px-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
-        <div className="flex justify-center space-x-8 md:order-2">
-          {linksGen}
+        <div className="md:order-2">
+          <a href="mailto:paul@paulchoi.dev">
+            <div className="text-gray-600 font-medium flex justify-center items-center underline hover:opacity-75 transition duration-150">
+              <UseAnimations animationKey="mail" />
+              <div className="ml-2">Say hi! 👋</div>
+            </div>
+          </a>
         </div>
         <div className="mt-8 md:mt-0 md:order-1">
           <p className="text-center text-base leading-6 text-gray-600">
@@ -51,20 +58,6 @@ const Footer = () => {
         </div>
       </div>
     </footer>
-  );
-};
-
-const Icon = ({ url, type, svgPath }) => {
-  return (
-    <a
-      href={url}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-gray-600 hover:text-gray-500 text-xl"
-    >
-      <span className="sr-only">{type}</span>
-      {svgPath}
-    </a>
   );
 };
 

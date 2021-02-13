@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleButton } from '../components/Button/Button';
 
 import Layout from '../components/layout';
-import Image from '../components/image';
+import HeadshotImage from '../components/headshotImage';
 import SEO from '../components/seo';
 
 const IndexPage = () => (
@@ -32,13 +32,15 @@ const MainHeader = () => {
   return (
     <div className="flex flex-col w-full sm:flex-row items-center">
       <div className="w-full h-full sm:w-2/3 text-center sm:text-left pr-0 sm:pr-12">
-        <h1 className="text-5xl md:text-6xl serif tracking-tight font-bold">Hi I'm Paul!</h1>
+        <h1 className="text-5xl md:text-6xl serif tracking-tight font-bold">
+          Hi I'm Paul!
+        </h1>
         <h2 className="text-2xl tracking-wider text-gray-600">
-          I'm a Software Engineer born and raised in Philadelphia.
+          I'm a Software Engineer born and raised in Philadelphia
         </h2>
       </div>
       <div className="w-1/2 mt-8 rounded-full overflow-hidden">
-        <Image />
+        <HeadshotImage />
       </div>
     </div>
   );
@@ -48,8 +50,14 @@ const Works = () => {
   const links = [
     { text: 'metrophilly.org', slug: 'https://metrophilly.org' },
     { text: 'pfc.us', slug: 'https://pfc.us' },
-    { text: 'QVC app (Android)', slug: 'https://play.google.com/store/apps/details?id=com.qvc' },
-    { text: 'QVC app (iOS)', slug: 'https://apps.apple.com/us/app/qvc-mobile-shopping-us/id340021813' },
+    {
+      text: 'QVC app (Android)',
+      slug: 'https://play.google.com/store/apps/details?id=com.qvc',
+    },
+    {
+      text: 'QVC app (iOS)',
+      slug: 'https://apps.apple.com/us/app/qvc-mobile-shopping-us/id340021813',
+    },
     // { text: 'hackermd.cc', slug: 'https://hackermd.netlify.app' }, // on hold
   ];
 
@@ -63,9 +71,9 @@ const Works = () => {
 
   return (
     <div className="mt-8 text-left w-full max-screen-md">
-      <div className="sans-serif font-medium tracking-wide text-lg text-gray-500 mb-2">
+      <h4 className="font-medium tracking-wide text-gray-500 mb-2 ">
         Stuff I'm working on
-      </div>
+      </h4>
       <div>{linksGen}</div>
     </div>
   );
@@ -96,12 +104,12 @@ const Intro = () => {
         I've graduated from{' '}
         <BaseLink to={'https://temple.edu'}>Temple University</BaseLink> in 2019
         with a BS in Computer Science and a minor in Data Science, and I'm
-        currently working as an Android and iOS developer for{' '}
+        currently working as a Software Engineer for{' '}
         <BaseLink to={'https://www.qurateretailgroup.com/'}>
           {' '}
           Qurate Retail Group
         </BaseLink>{' '}
-        (QVC and HSN's parent company).
+        (QVC and HSN's parent company) on their Android and iOS apps.
       </p>
       <p className="mb-6">
         Since 2016, I've been the Director of Digital Technologies for{' '}
@@ -116,9 +124,12 @@ const Intro = () => {
         a 2-week long summer camp for elementary-to-high school students.
       </p>
       <p>
-        Learn more about me by checking out my {' '}
-        <BaseLink to={'https://www.linkedin.com/in/paulhchoi'}>LinkedIn</BaseLink>,
-        or by sending me an{' '}<BaseLink to={'mailto:paul@paulchoi.dev'}>email</BaseLink>.
+        Learn more about me by checking out my{' '}
+        <BaseLink to={'https://www.linkedin.com/in/paulhchoi'}>
+          LinkedIn
+        </BaseLink>
+        , or by sending me an{' '}
+        <BaseLink to={'mailto:paul@paulchoi.dev'}>email</BaseLink>.
       </p>
     </div>
   );

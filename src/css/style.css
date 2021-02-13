@@ -15,28 +15,52 @@
 }
 
 html {
-  font-family: -apple-system, BlinkMacSystemFont, San Francisco, Segoe UI,
-    Roboto, Helvetica Neue, sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, San Francisco,
+    Segoe UI, Roboto, Helvetica Neue, sans-serif;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
   text-size-adjust: 100%;
-
   text-rendering: optimizeLegibility;
+}
 
-  button,
-  input,
-  optgroup,
-  select,
-  textarea {
-    font-family: inherit;
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: 'Inter var', sans-serif;
   }
+}
+
+h2 {
+  font-size: 24px;
+  letter-spacing: -0.02em;
+  line-height: 34px;
+}
+
+
+h4 {
+  font-size: 16px;
+  letter-spacing: -0.011em;
+  line-height: 22px;
+}
+
+p {
+  font-size: 18px;
+  letter-spacing: -0.015em;
+  line-height: 25px;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
 }
 
 .serif {
   font-family: 'Source Serif Pro', -apple-system, BlinkMacSystemFont,
-    San Francisco, Segoe UI, Roboto, Helvetica Neue, sans-serif;
+    San Francisco, Segoe UI, Roboto, Helvetica Neue, serif;
 }
 
 @tailwind components;

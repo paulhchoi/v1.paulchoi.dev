@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `paulchoi.dev`,
-    description: `Playground / sandbox / dev environment / throw-and-see-if-it-sticks.`,
+    description: `Playground / sandbox / dev environment`,
     author: `@paulhchoi`,
   },
   plugins: [
@@ -26,13 +26,17 @@ module.exports = {
         background_color: `#C6F6D5`,
         theme_color: `#C6F6D5`,
         display: `minimal-ui`,
-        icon: `src/static/logo/favicon.png`, // This path is relative to the root of the site.
+        icon: `src/static/logo/favicon.png`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [`Inter`],
       },
     },
     `gatsby-plugin-netlify`,
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+
     'gatsby-plugin-netlify-cache',
     {
       resolve: 'gatsby-plugin-react-svg',
