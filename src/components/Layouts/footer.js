@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaLinkedin, FaTwitter, FaGithub, FaEnvelope } from 'react-icons/fa';
-import { Icon } from './Icon/Icon';
+import { Icon } from '../Icon/Icon';
 import UseAnimations from 'react-useanimations';
 
 const Footer = () => {
@@ -42,8 +42,8 @@ const Footer = () => {
 
   return (
     <footer>
-      <div className="max-w-screen-xl mx-auto mt-8 py-8 px-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
-        <div className="md:order-2">
+      <div className="max-w-screen-xl px-4 py-8 mt-8 sm:px-6 lg:pl-40 lg:pr-16 lg:py-12 sm:flex sm:items-center sm:justify-between">
+        <div className="my-auto sm:order-2">
           <a href="mailto:paul@paulchoi.dev">
             <div className="text-gray-600 font-medium flex justify-center items-center underline hover:opacity-75 transition duration-150">
               <UseAnimations animationKey="mail" />
@@ -51,10 +51,8 @@ const Footer = () => {
             </div>
           </a>
         </div>
-        <div className="mt-8 md:mt-0 md:order-1">
-          <p className="text-center text-base leading-6 text-gray-600">
-            &copy; {new Date().getFullYear()} Paul Choi. All rights reserved.
-          </p>
+        <div className="my-auto mt-4 sm:mt-auto lg:ml-6 sm:order-1 text-center text-base text-gray-600">
+          &copy; {new Date().getFullYear()} Paul Choi. All rights reserved.
         </div>
       </div>
     </footer>

@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `paulchoi.dev`,
+    title: `Paul Choi`,
     description: `Playground / sandbox / dev environment`,
     author: `@paulhchoi`,
   },
@@ -36,14 +36,20 @@ module.exports = {
       },
     },
     `gatsby-plugin-netlify`,
-
-    'gatsby-plugin-netlify-cache',
+    `gatsby-plugin-netlify-cache`,
     {
       resolve: 'gatsby-plugin-react-svg',
       options: {
         rule: {
           include: /\.inline\.svg$/,
         },
+      },
+    },
+    `gatsby-plugin-postcss`,
+    {
+      resolve: `gatsby-plugin-purgecss`,
+      options: {
+        tailwind: true,
       },
     },
   ],

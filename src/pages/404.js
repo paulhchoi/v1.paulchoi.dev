@@ -1,13 +1,15 @@
-import React from "react"
-
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import React from 'react';
+import SEO from '../components/seo';
+import App from '../components/app';
+import PaginateNavigate from '../components/PaginateNavigate';
 
 const NotFoundPage = () => (
-  <Layout>
+  <App>
     <SEO title="404: Not found" />
-    <h1 className="text-center font-medium">Redirecting...</h1>
-  </Layout>
-)
+    <h2 className="mb-6 font-semibold text-2xl">🔍 Page not found!</h2>
 
-export default NotFoundPage
+    <PaginateNavigate nextText={'Home'} nextLink={'/'} />
+  </App>
+);
+
+export default NotFoundPage;

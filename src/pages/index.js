@@ -1,105 +1,25 @@
 import React from 'react';
-import { StyleButton } from '../components/Button/Button';
-
-import Layout from '../components/layout';
-import HeadshotImage from '../components/headshotImage';
 import SEO from '../components/seo';
+import App from '../components/app';
+import PaginateNavigate from '../components/PaginateNavigate';
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <Wrapper>
-      <MainHeader />
-
-      <Intro />
-
-      <Works />
-    </Wrapper>
-  </Layout>
+const HomePage = () => (
+  <App>
+    <SEO title="" />
+    <Intro />
+    <PaginateNavigate prevText={'Uses'} prevLink={'/uses'} nextText={'Projects'} nextLink={'/projects'}/>
+  </App>
 );
 
-export default IndexPage;
-
-const Wrapper = ({ children }) => {
-  return (
-    <div className="flex flex-col max-w-screen-md h-full mx-auto items-center justify-center">
-      {children}
-    </div>
-  );
-};
-
-const MainHeader = () => {
-  return (
-    <div className="flex flex-col w-full sm:flex-row items-center">
-      <div className="w-full h-full sm:w-2/3 text-center sm:text-left pr-0 sm:pr-12">
-        <h1 className="text-5xl md:text-6xl serif tracking-tight font-bold">
-          Hi I'm Paul!
-        </h1>
-        <h2 className="text-2xl tracking-wider text-gray-600">
-          I'm a Software Engineer born and raised in Philadelphia
-        </h2>
-      </div>
-      <div className="w-1/2 mt-8 rounded-full overflow-hidden">
-        <HeadshotImage />
-      </div>
-    </div>
-  );
-};
-
-const Works = () => {
-  const links = [
-    { text: 'metrophilly.org', slug: 'https://metrophilly.org' },
-    { text: 'pfc.us', slug: 'https://pfc.us' },
-    {
-      text: 'QVC app (Android)',
-      slug: 'https://play.google.com/store/apps/details?id=com.qvc',
-    },
-    {
-      text: 'QVC app (iOS)',
-      slug: 'https://apps.apple.com/us/app/qvc-mobile-shopping-us/id340021813',
-    },
-    // { text: 'hackermd.cc', slug: 'https://hackermd.netlify.app' }, // on hold
-  ];
-
-  const linksGen = [];
-
-  links.map((link) =>
-    linksGen.push(
-      <ButtonGen key={link.text} text={link.text} slug={link.slug} />,
-    ),
-  );
-
-  return (
-    <div className="mt-8 text-left w-full max-screen-md">
-      <h4 className="font-medium tracking-wide text-gray-500 mb-2 ">
-        Stuff I'm working on
-      </h4>
-      <div>{linksGen}</div>
-    </div>
-  );
-};
-
-const ButtonGen = ({ text, slug }) => {
-  const mText = text || '';
-  const mSlug = slug || '';
-
-  return (
-    <a href={mSlug} target="_blank" rel="noopener noreferrer">
-      <StyleButton color="green">
-        <div className="flex flex-row justify-center items-center p-1">
-          <span className="inline-block">{mText}</span>
-          {/*<span className="inline-block ml-1">*/}
-          {/*    <IoMdArrowDropdown />*/}
-          {/*  </span>*/}
-        </div>
-      </StyleButton>
-    </a>
-  );
-};
+export default HomePage;
 
 const Intro = () => {
   return (
-    <div className="py-12 text-left w-full max-screen-md text-lg text-gray-800 leading-8">
+    <div className="max-w-xl text-lg text-gray-800 leading-8">
+      <h2 className="mb-6 font-semibold text-2xl">👋 Hey there, I'm Paul!</h2>
+      <p className="mb-6">
+        I'm a Software Engineer born and raised in Philadelphia.
+      </p>
       <p className="mb-6">
         I've graduated from{' '}
         <BaseLink to={'https://temple.edu'}>Temple University</BaseLink> in 2019
