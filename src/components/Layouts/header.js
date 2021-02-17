@@ -75,11 +75,11 @@ const Header = ({ siteTitle }) => {
             </div>
             <div className="flex flex-col my-auto ml-4 sm:ml-0 lg:ml-6">
               <Link className="no-underline" to={'/'}>
-                <div className="font-black sm:mt-4 lg:mt-0 tracking-tight leading-none text-2xl sm:text-3xl lg:text-4xl">
+                <div className="font-black sm:mt-4 lg:mt-0 tracking-tight leading-none text-2xl sm:text-3xl lg:text-4xl text-gray-900">
                   Paul Choi
                 </div>
               </Link>
-              <div className="hidden sm:flex justify-start space-x-10 mt-4 lg:mt-3 uppercase leading-none text-xs lg:text-sm tracking-widest text-gray-500">
+              <div className="hidden sm:flex justify-start space-x-10 mt-4 lg:mt-3 uppercase leading-none text-xs lg:text-sm tracking-widest text-gray-700">
                 <TextLink to={'/'}>About</TextLink>
                 <TextLink to={'/projects'}>Projects</TextLink>
                 <TextLink to={'/resume'}>Resume</TextLink>

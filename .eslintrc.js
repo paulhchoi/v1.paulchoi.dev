@@ -1,6 +1,6 @@
 module.exports = {
   plugins: ['react-hooks'],
-  extends: ['airbnb'],
+  extends: [],
   rules: {
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',

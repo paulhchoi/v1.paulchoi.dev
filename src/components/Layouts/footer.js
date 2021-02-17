@@ -1,7 +1,6 @@
 import React from 'react';
 import { FaLinkedin, FaTwitter, FaGithub, FaEnvelope } from 'react-icons/fa';
 import { Icon } from '../Icon/Icon';
-import UseAnimations from 'react-useanimations';
 
 const Footer = () => {
   const links = [
@@ -46,7 +45,7 @@ const Footer = () => {
         <div className="my-auto sm:order-2">
           <a href="mailto:paul@paulchoi.dev">
             <div className="text-gray-600 font-medium flex justify-center items-center underline hover:opacity-75 transition duration-150">
-              <UseAnimations animationKey="mail" />
+              <FaEnvelope />
               <div className="ml-2">Say hi! 👋</div>
             </div>
           </a>

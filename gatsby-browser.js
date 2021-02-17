@@ -1,2 +1,1 @@
-import "./src/css/style.css";
-import "typeface-ibm-plex-serif";
+import './src/css/style.css';

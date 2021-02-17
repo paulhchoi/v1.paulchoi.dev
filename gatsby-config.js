@@ -29,12 +29,6 @@ module.exports = {
         icon: `src/static/logo/favicon.png`,
       },
     },
-    {
-      resolve: `gatsby-plugin-google-fonts`,
-      options: {
-        fonts: [`Inter`],
-      },
-    },
     `gatsby-plugin-netlify`,
     `gatsby-plugin-netlify-cache`,
     {

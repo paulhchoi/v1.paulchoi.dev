@@ -40,7 +40,7 @@ const HeadshotImage = () => {
       }
       hs4: file(relativePath: { eq: "2020_memoji_sq.png" }) {
         childImageSharp {
-          fluid(maxWidth: 750, quality: 100) {
+          fluid(maxWidth: 96, quality: 100) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
@@ -48,48 +48,52 @@ const HeadshotImage = () => {
     }
   `);
 
-  const [image, setImage] = useState(
-    <Img fluid={data.hs1.childImageSharp.fluid} />,
-  );
+  // TODO set up randomly rotating images later
+  // const [image, setImage] = useState(
+  //   <Img fluid={data.hs1.childImageSharp.fluid} />,
+  // );
 
-  const updateImageDuration = 2;
-  let images = 1;
+  // const updateImageDuration = 2;
+  // let images = 1;
 
-  useEffect(() => {
-    const interval = setInterval(
-      () => setImage(randPhrase(randInt(4))),
-      updateImageDuration * 1000,
-    );
+  // useEffect(() => {
+  //   const interval = setInterval(
+  //     () => setImage(randPhrase(randInt(4))),
+  //     updateImageDuration * 1000,
+  //   );
 
-    return () => {
-      clearInterval(interval);
-    };
-  }, []);
+  //   return () => {
+  //     clearInterval(interval);
+  //   };
+  // }, []);
 
-  function randPhrase(int) {
-    switch (int) {
-      case 1:
-        return <Img fluid={data.hs1.childImageSharp.fluid} />;
-      case 2:
-        return <Img fluid={data.hs2.childImageSharp.fluid} />;
-      case 3:
-        return <Img fluid={data.hs3.childImageSharp.fluid} />;
-      case 4:
-        return <Img fluid={data.hs4.childImageSharp.fluid} />;
-      default:
-        return <Img fluid={data.hs1.childImageSharp.fluid} />;
-    }
-  }
+  // function randPhrase(int) {
+  //   switch (int) {
+  //     case 1:
+  //       return <Img fluid={data.hs1.childImageSharp.fluid} />;
+  //     case 2:
+  //       return <Img fluid={data.hs2.childImageSharp.fluid} />;
+  //     case 3:
+  //       return <Img fluid={data.hs3.childImageSharp.fluid} />;
+  //     case 4:
+  //       return <Img fluid={data.hs4.childImageSharp.fluid} />;
+  //     default:
+  //       return <Img fluid={data.hs1.childImageSharp.fluid} />;
+  //   }
+  // }
 
-  function randInt(int = 0) {
-    return Math.floor(1 + Math.random() * int);
-  }
+  // function randInt(int = 0) {
+  //   return Math.floor(1 + Math.random() * int);
+  // }
 
   return (
     <div>
       {/*<FadeIn delay={250} duration={450}>*/}
       {/*{image}*/}
-      <Img fluid={data.hs4.childImageSharp.fluid} alt={"A memoji of Paul in thinking-mode"}/>
+      <Img
+        fluid={data.hs4.childImageSharp.fluid}
+        alt={'A memoji of Paul in thinking-mode'}
+      />
       {/*</FadeIn>*/}
     </div>
   );
