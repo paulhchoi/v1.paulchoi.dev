@@ -7,7 +7,12 @@ const HomePage = () => (
   <App>
     <SEO title="" />
     <Intro />
-    <PaginateNavigate prevText={'Uses'} prevLink={'/uses'} nextText={'Projects'} nextLink={'/projects'}/>
+    <PaginateNavigate
+      prevText={'Uses'}
+      prevLink={'/uses'}
+      nextText={'Projects'}
+      nextLink={'/projects'}
+    />
   </App>
 );
 

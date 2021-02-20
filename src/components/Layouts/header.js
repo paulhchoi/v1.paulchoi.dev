@@ -60,7 +60,8 @@ const Header = ({ siteTitle }) => {
       {isMobNavOpen && <MobileNavigation handleModalClose={setIsMobNavOpen} />}
 
       <Headroom>
-        <div className="flex flex-row max-w-screen-xl bg-gray-100 py-8 px-4 mb-8 sm:px-6 lg:py-12 lg:px-16">
+        {/* <div className="w-full shadow-md"> */}
+        <div className="flex flex-row max-w-screen-xl bg-gray-100 py-8 px-4 sm:px-6 lg:py-12 lg:px-16">
           <div className="flex flex-row sm:flex-col lg:flex-row">
             <div
               className="h-10 w-10 sm:h-16 sm:w-16 lg:h-24 lg:w-24 my-auto bg-green-100 rounded-full"
@@ -98,6 +99,7 @@ const Header = ({ siteTitle }) => {
             />
           </div>
         </div>
+        {/* </div> */}
       </Headroom>
     </header>
   );

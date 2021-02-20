@@ -2,7 +2,7 @@ import React from 'react';
 import SEO from '../components/seo';
 import App from '../components/app';
 import { Link } from 'gatsby';
-import PaginateNavigate from "../components/PaginateNavigate";
+import PaginateNavigate from '../components/PaginateNavigate';
 
 const ProjectsPage = () => (
   <App>

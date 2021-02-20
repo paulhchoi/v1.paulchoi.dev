@@ -1,6 +1,12 @@
 import React, { useLayoutEffect } from 'react';
 import { Link } from 'gatsby';
-import { FaEnvelope, FaGithub, FaLinkedin, FaTimes, FaTwitter } from "react-icons/fa";
+import {
+  FaEnvelope,
+  FaGithub,
+  FaLinkedin,
+  FaTimes,
+  FaTwitter,
+} from 'react-icons/fa';
 import { Icon } from '../Icon/Icon';
 
 const MobileNavigation = ({ handleModalClose }) => {
