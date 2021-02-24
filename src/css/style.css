@@ -45,6 +45,9 @@ html {
 
   text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
+
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
 }
 
 @supports (font-variation-settings: normal) {
