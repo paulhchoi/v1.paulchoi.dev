@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import SEO from '../components/seo';
 import App from '../components/app';
 import styled from '@emotion/styled';
@@ -18,91 +19,86 @@ const UsesPage = () => (
         <a href="mailto:paul@paulchoi.dev">send me a message</a>!
       </p>
       <div className={'max-w-6xl grid xl:grid-cols-2 gap-4'}>
-        <div className={'mb-8'}>
-          <h3 className="mb-2">Desktop Apps</h3>
-          <ul className={'pl-4'}>
-            <ListItem>iTerm 2 w/ oh-my-zsh</ListItem>
-            <ListItem>Sublime 3</ListItem>
-            <ListItem>IntelliJ & Android Studio</ListItem>
-          </ul>
-        </div>
+        <ListSection
+          title={'Desktop Apps'}
+          list={[
+            'iTerm 2 w/ ohmyzsh & power10k',
+            'Sublime 3',
+            'IntelliJ & Android Studio',
+          ]}
+        />
 
-        <div className={'mb-8'}>
-          <h3 className="mb-2">Helper Utils</h3>
-          <ul className={'pl-4'}>
-            <ListItem>Homebrew</ListItem>
-            <ListItem>Alfred</ListItem>
-            <ListItem>BetterTouchTools</ListItem>
-            <ListItem>Rocket</ListItem>
-            <ListItem>Amphetamine</ListItem>
-            <ListItem>iStats Menus</ListItem>
-          </ul>
-        </div>
+        <ListSection
+          title={'Helper Utils'}
+          list={[
+            'Homebrew',
+            'Alfred',
+            'BetterTouchTools',
+            'Rocket',
+            'Amphetamine',
+            'iStats Menus',
+          ]}
+        />
 
-        <div className={'mb-8'}>
-          <h3 className="mb-2">Productivity</h3>
-          <ul className={'pl-4'}>
-            <ListItem>OmniFocus, for personal GTD</ListItem>
-            <ListItem>Trello, for team project management</ListItem>
-            <ListItem>Notion, for 2nd-brain / persistent notes</ListItem>
-            <ListItem>30-min & 5-min hour glasses (analog pomodoro)</ListItem>
-            <ListItem>Too many sketchpads & post-its</ListItem>
-          </ul>
-        </div>
+        <ListSection
+          title={'Productivity'}
+          list={[
+            'OmniFocus, for personal GTD',
+            'Trello, for team project management',
+            'Notion, for 2nd-brain / persistent notes',
+            '30-min & 5-min hour glasses, for analog pomodoro',
+            'Too many sketchpads & post-its',
+          ]}
+        />
 
-        <div className={'mb-8'}>
-          <h3 className="mb-2">Privacy</h3>
-          <ul className={'pl-4'}>
-            <ListItem>1Password</ListItem>
-            <ListItem>YubiKeys</ListItem>
-            <ListItem>Firefox w/ DuckDuckGo</ListItem>
-            <ListItem>ProtonMail & AnonAddy</ListItem>
-            <ListItem>NextDNS</ListItem>
-            <ListItem>Signal</ListItem>
-          </ul>
-        </div>
+        <ListSection
+          title={'Privacy'}
+          list={[
+            '1Password',
+            'YubiKeys',
+            'Firefox w/ DuckDuckGo',
+            'ProtonMail & AnonAddy',
+            'NextDNS',
+            'Signal',
+          ]}
+        />
 
-        <div className={'mb-8'}>
-          <h3 className="mb-2">Desk Setup</h3>
-          <ul className={'pl-4'}>
-            <ListItem>
-              2015 15&quot; MacBook Pro (2.3 GHz i7, 16GB DDR3)
-            </ListItem>
-            <ListItem>27&quot; Apple Thunderbolt Display</ListItem>
-            <ListItem>27&quot; Asus Monitor</ListItem>
-            <ListItem>IKEA Jerker desk (thanks Kev!)</ListItem>
-            <ListItem>
-              Lily58 split mechanical keyboard w/ Zelios V2 switches
-            </ListItem>
-            <ListItem>Plants on plants on plants</ListItem>
-          </ul>
-        </div>
+        <ListSection
+          title={'Desk Setup'}
+          list={[
+            '2015 15" MacBook Pro (2.3 GHz i7, 16GB DDR3)',
+            '27" Apple Thunderbolt Display',
+            '27" Asus Monitor',
+            'IKEA Jerker desk (thanks Kev!)',
+            'Lily58 split mechanical keyboard w/ Zelios V2 switches',
+            'Plants on plants on plants',
+          ]}
+        />
 
-        <div className={'mb-8'}>
-          <h3 className="mb-2">Extra Accessories</h3>
-          <ul className={'pl-4'}>
-            <ListItem>Sony h.ear noise-cancelling headphones</ListItem>
-            <ListItem>Blue Yeti microphone</ListItem>
-            <ListItem>Samsung T5 1TB external</ListItem>
-            <ListItem>Creality Ender 3 3D Printer</ListItem>
-          </ul>
-        </div>
+        <ListSection
+          title={'Extra Accessories'}
+          list={[
+            'Sony h.ear noise-cancelling headphones',
+            'Blue Yeti microphone',
+            '27" Asus Monitor',
+            'Samsung T5 1TB external',
+            'Creality Ender 3 3D Printer',
+          ]}
+        />
 
-        <div className={'mb-8'}>
-          <h3 className="mb-2">Currently Playing</h3>
-          <ul className={'pl-4'}>
-            <ListItem>Animal Crossing: New Horizons</ListItem>
-            <ListItem>Chess.com</ListItem>
-            <ListItem>&quot;Really Bad Chess&quot; by Zach Gage</ListItem>
-          </ul>
-        </div>
+        <ListSection
+          title={'Currently Playing'}
+          list={[
+            'Animal Crossing: New Horizons',
+            'Chess.com',
+            '"Really Bad Chess" by Zach Gage',
+          ]}
+        />
 
-        <div className={'mb-8'}>
-          <h3 className="mb-2">Currently Reading</h3>
-          <ul className={'pl-4'}>
-            <ListItem>The Innovators by Walter Isaacson</ListItem>
-          </ul>
-        </div>
+        <ListSection
+          title={'Currently Reading'}
+          list={['The Innovators by Walter Isaacson']}
+        />
       </div>
     </div>
     <PaginateNavigate
@@ -120,3 +116,22 @@ const ListItem = styled.li({
   listStyleType: 'disc',
   paddingLeft: '1rem',
 });
+
+const ListSection = ({ title, list }) => {
+  var items = [];
+  for (var item of list) {
+    items.push(<ListItem>{item}</ListItem>);
+  }
+
+  return (
+    <div className={'mb-8'}>
+      <h3 className="mb-2">{title}</h3>
+      <ul className={'pl-4'}>{items}</ul>
+    </div>
+  );
+};
+
+ListSection.propTypes = {
+  title: PropTypes.element.string,
+  list: PropTypes.element.array,
+};
