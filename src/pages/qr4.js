@@ -1,13 +1,13 @@
 import React from 'react';
-import Layout from '../components/Layouts/layout';
+import App from '../components/app';
 import ExternalRedirect from './ExternalRedirect';
 import SEO from '../components/seo';
 
 const QR4Page = () => (
-  <Layout>
+  <App>
     <SEO title="QR4" />
     <ExternalRedirect slug="https://youtu.be/Tish3KkNnLc" />
-  </Layout>
+  </App>
 );
 
 export default QR4Page;

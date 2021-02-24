@@ -8,12 +8,17 @@ import {
   FaTwitter,
 } from 'react-icons/fa';
 import { Icon } from '../Icon/Icon';
+import PropTypes from 'prop-types';
 
 const MobileNavigation = ({ handleModalClose }) => {
   useLockBodyScroll();
 
   return (
-    <div className={'bg-gray-100 w-full h-full fixed z-10 flex flex-col'}>
+    <div
+      className={
+        'bg-primary text-primary w-full h-full fixed z-10 flex flex-col'
+      }
+    >
       <div className="flex flex-row text-2xl justify-end py-6 mb-8">
         <div onClick={() => handleModalClose()}>
           <FaTimes className="m-4" />
@@ -59,6 +64,10 @@ const MobileNavigation = ({ handleModalClose }) => {
 };
 
 export default MobileNavigation;
+
+MobileNavigation.propTypes = {
+  handleModalClose: PropTypes.func,
+};
 
 function useLockBodyScroll() {
   useLayoutEffect(() => {

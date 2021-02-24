@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import PropTypes from 'prop-types';
 
 const TextLink = ({ children, to }) => {
   return (
@@ -16,3 +17,8 @@ const TextLink = ({ children, to }) => {
 };
 
 export default TextLink;
+
+TextLink.propTypes = {
+  to: PropTypes.string,
+  children: PropTypes.children,
+};

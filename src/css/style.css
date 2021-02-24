@@ -1,3 +1,25 @@
+.light {
+  --color-bg-primary: #f3f4f6;
+  --color-bg-secondary: #d1d5db;
+  --color-bg-accent: #d1fae5;
+
+  --color-text-primary: #2d3748;
+  --color-text-secondary: #4a5568;
+
+  --color-text-accent: #2b6cb0;
+}
+
+.dark {
+  --color-bg-primary: #1f2937;
+  --color-bg-secondary: #111827;
+  --color-bg-accent: #4b5563;
+
+  --color-text-primary: #f7fafc;
+  --color-text-secondary: #e2e8f0;
+
+  --color-text-accent: #81e6d9;
+}
+
 @tailwind base;
 
 @font-face {
@@ -62,7 +84,7 @@ a {
 }
 
 a:hover {
-  opacity: 0.50;
+  opacity: 0.5;
 }
 
 button,

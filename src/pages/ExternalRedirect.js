@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const ExternalRedirect = ({ slug }) => {
   const isClient = typeof window === 'object';
@@ -8,3 +9,7 @@ const ExternalRedirect = ({ slug }) => {
 };
 
 export default ExternalRedirect;
+
+ExternalRedirect.propTypes = {
+  slug: PropTypes.element.string,
+};

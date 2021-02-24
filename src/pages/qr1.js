@@ -1,15 +1,13 @@
 import React from 'react';
-import Layout from '../components/Layouts/layout';
-import ExternalRedirect from './ExternalRedirect';
+import App from '../components/app';
 import SEO from '../components/seo';
-import { Redirect, Router } from '@reach/router';
 
 const QR1Page = () => {
   return (
-    <Layout>
+    <App>
       <SEO title="QR1" />
       Redirecting...
-    </Layout>
+    </App>
   );
 };
 

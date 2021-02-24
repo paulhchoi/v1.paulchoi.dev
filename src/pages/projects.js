@@ -3,17 +3,18 @@ import SEO from '../components/seo';
 import App from '../components/app';
 import { Link } from 'gatsby';
 import PaginateNavigate from '../components/PaginateNavigate';
+import PropTypes from 'prop-types';
 
 const ProjectsPage = () => (
   <App>
     <SEO title="Projects" />
     <h2 className="mb-6 font-semibold text-2xl">Projects</h2>
 
-    <div className="max-w-xl text-lg text-gray-800 leading-8">
+    <div className="max-w-xl text-lg text-primary leading-8">
       <p className="mb-16">
-        These are few of the projects I've worked on over the years. Most of
-        them are closed-source, but if you'd like any clarification, feel free
-        to <a href="mailto:paul@paulchoi.dev">send me a message</a>.
+        These are few of the projects I&apos;ve worked on over the years. Most
+        of them are closed-source, but if you&apos;d like any clarification,
+        feel free to <a href="mailto:paul@paulchoi.dev">send me a message</a>.
       </p>
       <ProjectBlock
         title={'Metrophilly.org'}
@@ -87,4 +88,10 @@ const ProjectBlock = ({ title, desc, link }) => {
       )}
     </div>
   );
+};
+
+ProjectBlock.propTypes = {
+  title: PropTypes.string,
+  desc: PropTypes.string,
+  link: PropTypes.string,
 };

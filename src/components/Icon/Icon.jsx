@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export const Icon = ({ url, type, svgPath }) => {
   return (
@@ -6,10 +7,16 @@ export const Icon = ({ url, type, svgPath }) => {
       href={url}
       target="_blank"
       rel="noopener noreferrer"
-      className="text-gray-600 hover:text-gray-500 text-xl"
+      className="text-secondary hover:opacity-75 text-xl"
     >
       <span className="sr-only">{type}</span>
       {svgPath}
     </a>
   );
+};
+
+Icon.propTypes = {
+  url: PropTypes.element.string,
+  type: PropTypes.element.string,
+  svgPath: PropTypes.elementType,
 };

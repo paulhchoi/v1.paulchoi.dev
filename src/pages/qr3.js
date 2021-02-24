@@ -1,13 +1,13 @@
 import React from 'react';
-import Layout from '../components/Layouts/layout';
+import App from '../components/app';
 import ExternalRedirect from './ExternalRedirect';
 import SEO from '../components/seo';
 
 const QR3Page = () => (
-  <Layout>
+  <App>
     <SEO title="QR3" />
     <ExternalRedirect slug="https://pfc.us/" />
-  </Layout>
+  </App>
 );
 
 export default QR3Page;

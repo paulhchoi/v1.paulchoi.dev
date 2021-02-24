@@ -1,13 +1,13 @@
 import React from 'react';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import { Link } from 'gatsby';
-import App from './app';
+import PropTypes from 'prop-types';
 
 const PaginateNavigate = ({ prevText, prevLink, nextText, nextLink }) => {
   return (
     <>
       <div className="flex-1" />
-      <div className="flex flex-row max-w-xl justify-center space-x-12 mt-24 text-xl text-gray-700">
+      <div className="flex flex-row max-w-xl justify-center space-x-12 mt-24 text-xl text-secondary">
         {prevText && prevLink && (
           <Link
             to={prevLink}
@@ -30,3 +30,10 @@ const PaginateNavigate = ({ prevText, prevLink, nextText, nextLink }) => {
 };
 
 export default PaginateNavigate;
+
+PaginateNavigate.propTypes = {
+  prevText: PropTypes.element.string,
+  prevLink: PropTypes.element.string,
+  nextText: PropTypes.element.string,
+  nextLink: PropTypes.element.string,
+};

@@ -9,8 +9,8 @@ const ResumePage = () => (
     <h2 className="mb-6 font-semibold text-2xl">Resume</h2>
 
     <p className="mb-6">
-      <a href="mailto:paul@paulchoi.dev">Send me a message</a> and I'll be glad
-      to share my resume with you!
+      <a href="mailto:paul@paulchoi.dev">Send me a message</a> and I&apos;ll be
+      glad to share my resume with you!
     </p>
     <PaginateNavigate
       prevText={'Projects'}

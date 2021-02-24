@@ -9,7 +9,7 @@ const UsesPage = () => (
     <SEO title="Uses" />
     <h2 className="mb-6 font-semibold text-2xl">Uses</h2>
 
-    <div className="text-lg text-gray-800 leading-8">
+    <div className="text-lg leading-8">
       <p className="max-w-xl mb-16">
         Inspired by <a href="https://wesbos.com/uses">wesbos.com</a> and{' '}
         <a href="https://uses.tech/">uses.tech</a>, this is a quick list of
@@ -17,7 +17,6 @@ const UsesPage = () => (
         have any questions, suggestions, or just want to geek out with me,{' '}
         <a href="mailto:paul@paulchoi.dev">send me a message</a>!
       </p>
-
       <div className={'max-w-6xl grid xl:grid-cols-2 gap-4'}>
         <div className={'mb-8'}>
           <h3 className="mb-2">Desktop Apps</h3>
@@ -29,12 +28,11 @@ const UsesPage = () => (
         </div>
 
         <div className={'mb-8'}>
-          <h3 className="mb-2">Helper Apps</h3>
+          <h3 className="mb-2">Helper Utils</h3>
           <ul className={'pl-4'}>
             <ListItem>Homebrew</ListItem>
             <ListItem>Alfred</ListItem>
             <ListItem>BetterTouchTools</ListItem>
-            <ListItem>NextDNS</ListItem>
             <ListItem>Rocket</ListItem>
             <ListItem>Amphetamine</ListItem>
             <ListItem>iStats Menus</ListItem>
@@ -59,6 +57,7 @@ const UsesPage = () => (
             <ListItem>YubiKeys</ListItem>
             <ListItem>Firefox w/ DuckDuckGo</ListItem>
             <ListItem>ProtonMail & AnonAddy</ListItem>
+            <ListItem>NextDNS</ListItem>
             <ListItem>Signal</ListItem>
           </ul>
         </div>
@@ -66,9 +65,11 @@ const UsesPage = () => (
         <div className={'mb-8'}>
           <h3 className="mb-2">Desk Setup</h3>
           <ul className={'pl-4'}>
-            <ListItem>2015 15" MacBook Pro (2.3 GHz i7, 16GB DDR3)</ListItem>
-            <ListItem>27" Apple Thunderbolt Display</ListItem>
-            <ListItem>27" Asus Monitor</ListItem>
+            <ListItem>
+              2015 15&quot; MacBook Pro (2.3 GHz i7, 16GB DDR3)
+            </ListItem>
+            <ListItem>27&quot; Apple Thunderbolt Display</ListItem>
+            <ListItem>27&quot; Asus Monitor</ListItem>
             <ListItem>IKEA Jerker desk (thanks Kev!)</ListItem>
             <ListItem>
               Lily58 split mechanical keyboard w/ Zelios V2 switches
@@ -92,7 +93,7 @@ const UsesPage = () => (
           <ul className={'pl-4'}>
             <ListItem>Animal Crossing: New Horizons</ListItem>
             <ListItem>Chess.com</ListItem>
-            <ListItem>"Really Bad Chess" by Zach Gage</ListItem>
+            <ListItem>&quot;Really Bad Chess&quot; by Zach Gage</ListItem>
           </ul>
         </div>
 

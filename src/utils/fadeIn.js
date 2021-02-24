@@ -1,5 +1,6 @@
 // FadeIn.js
 import React from 'react';
+import PropTypes from 'prop-types';
 import { keyframes } from '@emotion/core';
 import styled from '@emotion/styled';
 
@@ -34,3 +35,9 @@ const Wrapper = styled.div`
   }
 `;
 export default FadeIn;
+
+FadeIn.propTypes = {
+  duration: PropTypes.element.number,
+  delay: PropTypes.element.number,
+  children: PropTypes.element.children,
+};

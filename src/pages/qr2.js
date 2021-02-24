@@ -1,13 +1,13 @@
 import React from 'react';
-import Layout from '../components/Layouts/layout';
+import App from '../components/app';
 import ExternalRedirect from './ExternalRedirect';
 import SEO from '../components/seo';
 
 const QR2Page = () => (
-  <Layout>
+  <App>
     <SEO title="QR2" />
     <ExternalRedirect slug="https://metrophilly.org" />
-  </Layout>
+  </App>
 );
 
 export default QR2Page;

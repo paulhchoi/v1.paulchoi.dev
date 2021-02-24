@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
-import FadeIn from '../utils/fadeIn';
 
 /*
  * This component is built using `gatsby-image` to automatically serve optimized

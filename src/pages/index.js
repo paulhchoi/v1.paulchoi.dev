@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import SEO from '../components/seo';
 import App from '../components/app';
 import PaginateNavigate from '../components/PaginateNavigate';
@@ -20,24 +21,23 @@ export default HomePage;
 
 const Intro = () => {
   return (
-    <div className="max-w-xl text-lg text-gray-800 leading-8">
-      <h2 className="mb-6 font-semibold text-2xl">👋 Hey there, I'm Paul!</h2>
+    <div className="max-w-xl text-lg text-primary leading-8">
+      <h2 className="mb-6 font-semibold text-2xl">
+        👋 Hey there, I&apos;m Paul!
+      </h2>
       <p className="mb-6">
-        I'm a Software Engineer born and raised in Philadelphia.
+        I&apos;m a Software Engineer born and raised in Philadelphia.
       </p>
       <p className="mb-6">
-        I've graduated from{' '}
+        I&apos;ve graduated from{' '}
         <BaseLink to={'https://temple.edu'}>Temple University</BaseLink> in 2019
-        with a BS in Computer Science and a minor in Data Science, and I'm
+        with a BS in Computer Science and a minor in Data Science, and I&apos;m
         currently working as a Software Engineer for{' '}
-        <BaseLink to={'https://www.qurateretailgroup.com/'}>
-          {' '}
-          Qurate Retail Group
-        </BaseLink>{' '}
-        (QVC and HSN's parent company) on their Android and iOS apps.
+        <BaseLink to={'https://www.qurateretailgroup.com/'}> QVC</BaseLink> on
+        their Android and iOS apps.
       </p>
       <p className="mb-6">
-        Since 2016, I've been the Director of Digital Technologies for{' '}
+        Since 2016, I&apos;ve been the Director of Digital Technologies for{' '}
         <BaseLink to={'https://metrophilly.org'}>Metro Church</BaseLink>, based
         in Philadelphia, PA where I work with a great team to help advance our
         digital strategies, tools, and experiences through data-driven
@@ -71,4 +71,9 @@ export const BaseLink = ({ to, children, ...other }) => {
       <span {...other}>{children}</span>
     </a>
   );
+};
+
+BaseLink.propTypes = {
+  to: PropTypes.element.toString,
+  children: PropTypes.element.children,
 };
