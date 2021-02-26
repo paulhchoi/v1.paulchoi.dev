@@ -32,8 +32,8 @@ const PaginateNavigate = ({ prevText, prevLink, nextText, nextLink }) => {
 export default PaginateNavigate;
 
 PaginateNavigate.propTypes = {
-  prevText: PropTypes.element.string,
-  prevLink: PropTypes.element.string,
-  nextText: PropTypes.element.string,
-  nextLink: PropTypes.element.string,
+  prevText: PropTypes.string,
+  prevLink: PropTypes.string,
+  nextText: PropTypes.string,
+  nextLink: PropTypes.string,
 };

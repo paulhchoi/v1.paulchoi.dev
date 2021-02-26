@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import SEO from '../components/seo';
 import App from '../components/app';
@@ -60,6 +61,9 @@ const UsesPage = () => (
             'ProtonMail & AnonAddy',
             'NextDNS',
             'Signal',
+            <>
+              <a href={'https://pchoi.me/gpg'}>GPG key</a>: 0xD9DA860C17AE0196
+            </>,
           ]}
         />
 
@@ -120,7 +124,7 @@ const ListItem = styled.li({
 const ListSection = ({ title, list }) => {
   var items = [];
   for (var item of list) {
-    items.push(<ListItem>{item}</ListItem>);
+    items.push(<ListItem key={item}>{item}</ListItem>);
   }
 
   return (
@@ -132,6 +136,6 @@ const ListSection = ({ title, list }) => {
 };
 
 ListSection.propTypes = {
-  title: PropTypes.element.string,
-  list: PropTypes.element.array,
+  title: PropTypes.string,
+  list: PropTypes.array,
 };

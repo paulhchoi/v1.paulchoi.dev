@@ -74,6 +74,6 @@ export const BaseLink = ({ to, children, ...other }) => {
 };
 
 BaseLink.propTypes = {
-  to: PropTypes.element.toString,
-  children: PropTypes.element.children,
+  to: PropTypes.string,
+  children: PropTypes.node.isRequired,
 };

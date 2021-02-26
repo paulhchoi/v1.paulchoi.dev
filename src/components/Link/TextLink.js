@@ -20,5 +20,5 @@ export default TextLink;
 
 TextLink.propTypes = {
   to: PropTypes.string,
-  children: PropTypes.children,
+  children: PropTypes.node.isRequired,
 };

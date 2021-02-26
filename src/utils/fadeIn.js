@@ -37,7 +37,7 @@ const Wrapper = styled.div`
 export default FadeIn;
 
 FadeIn.propTypes = {
-  duration: PropTypes.element.number,
-  delay: PropTypes.element.number,
-  children: PropTypes.element.children,
+  duration: PropTypes.number,
+  delay: PropTypes.number,
+  children: PropTypes.node.isRequired,
 };

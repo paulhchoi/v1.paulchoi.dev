@@ -50,5 +50,5 @@ const getInitialTheme = () => {
 
 ThemeProvider.propTypes = {
   initialTheme: PropTypes.string,
-  children: PropTypes.element.children,
+  children: PropTypes.node.isRequired,
 };

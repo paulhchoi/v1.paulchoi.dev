@@ -16,7 +16,7 @@ export const Icon = ({ url, type, svgPath }) => {
 };
 
 Icon.propTypes = {
-  url: PropTypes.element.string,
-  type: PropTypes.element.string,
-  svgPath: PropTypes.elementType,
+  url: PropTypes.string,
+  type: PropTypes.string,
+  svgPath: PropTypes.element,
 };

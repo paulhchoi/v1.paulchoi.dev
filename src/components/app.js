@@ -21,5 +21,5 @@ export default App;
 
 App.propTypes = {
   seo: PropTypes.string,
-  children: PropTypes.element.children,
+  children: PropTypes.node.isRequired,
 };

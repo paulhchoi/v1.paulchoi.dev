@@ -73,18 +73,18 @@ const ProjectBlock = ({ title, desc, link }) => {
   return (
     <div className={'mb-12'}>
       {link ? (
-        <Link className={'text-sm font-medium no-underline'} to={link}>
+        <a className={'text-sm font-medium no-underline'} href={link}>
           <h3 className="mb-4">{title}</h3>
-        </Link>
+        </a>
       ) : (
         <h3 className="mb-4">{title}</h3>
       )}
 
       <p className="mb-2">{desc}</p>
       {link && (
-        <Link className={'text-sm font-medium'} to={link}>
+        <a className={'text-sm font-medium'} href={link}>
           Visit site →
-        </Link>
+        </a>
       )}
     </div>
   );

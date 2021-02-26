@@ -11,5 +11,5 @@ const ExternalRedirect = ({ slug }) => {
 export default ExternalRedirect;
 
 ExternalRedirect.propTypes = {
-  slug: PropTypes.element.string,
+  slug: PropTypes.string,
 };
