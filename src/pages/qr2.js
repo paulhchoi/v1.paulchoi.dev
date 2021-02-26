@@ -1,7 +1,7 @@
 import React from 'react';
 import App from '../components/app';
-import ExternalRedirect from './ExternalRedirect';
 import SEO from '../components/seo';
+import ExternalRedirect from './ExternalRedirect';
 
 const QR2Page = () => (
   <App>
