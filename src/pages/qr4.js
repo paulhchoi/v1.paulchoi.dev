@@ -15,7 +15,7 @@ const QR4Page = () => {
       );
   }
 
-  setInterval(() => func(randomYoutubeId), 333);
+  setInterval(() => func(randomYoutubeId), 334);
 
   return (
     <App>
