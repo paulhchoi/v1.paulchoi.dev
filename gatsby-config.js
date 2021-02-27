@@ -50,5 +50,15 @@ module.exports = {
         tailwind: true,
       },
     },
+    {
+      resolve: `gatsby-plugin-umami`,
+      options: {
+        websiteId: `${process.env.GATSBY_UMAMI_ID}`,
+        srcUrl: 'https://pchoi-umami-analytics.herokuapp.com/umami.js',
+        includeInDevelopment: false,
+        autoTrack: true,
+        respectDoNotTrack: true,
+      },
+    },
   ],
 };
