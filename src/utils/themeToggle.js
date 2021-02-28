@@ -11,7 +11,7 @@ export const ThemeToggle = () => {
 
   return (
     <div
-      className="text-secondary hover:opacity-75 text-xl"
+      className="text-secondary hover:opacity-75 text-xl umami--click--header-themeToggle-icon"
       onClick={() => setTheme(isDark() ? 'light' : 'dark')}
     >
       <FaMoon />

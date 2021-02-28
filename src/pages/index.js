@@ -66,7 +66,11 @@ export const BaseLink = ({ to, children, ...other }) => {
       href={to}
       target="_blank"
       rel="noopener noreferrer"
-      className="underline font-bold hover:opacity-75 transition duration-150 "
+      className="underline font-bold hover:opacity-75 transition duration-150"
+      onClick={() =>
+        // eslint-disable-next-line no-undef
+        umami(`/-${children}-link`)
+      }
     >
       <span {...other}>{children}</span>
     </a>

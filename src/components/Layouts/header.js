@@ -47,6 +47,10 @@ const Header = ({ siteTitle }) => {
         url={link.url}
         type={link.text}
         svgPath={link.svgPath}
+        onClick={() =>
+          // eslint-disable-next-line no-undef
+          umami(`header-${link.text}-icon`)
+        }
       />,
     ),
   );
@@ -66,21 +70,51 @@ const Header = ({ siteTitle }) => {
                 transform: scaleX(-1);
               `}
             >
-              <Link to={'/'}>
+              <Link
+                to={'/'}
+                // eslint-disable-next-line no-undef
+                onClick={() => umami(`header-main-avatar-icon`)}
+              >
                 <HeadshotImage />
               </Link>
             </div>
             <div className="flex flex-col my-auto ml-4 sm:ml-0 lg:ml-6">
-              <Link className="no-underline" to={'/'}>
+              <Link
+                className="no-underline"
+                to={'/'}
+                // eslint-disable-next-line no-undef
+                onClick={() => umami(`header-main-Paul-Choi-brand-link`)}
+              >
                 <div className="font-black sm:mt-4 lg:mt-0 tracking-tight leading-none text-2xl sm:text-3xl lg:text-4xl">
                   Paul Choi
                 </div>
               </Link>
               <div className="hidden sm:flex justify-start space-x-10 mt-4 lg:mt-3 uppercase leading-none text-xs lg:text-sm tracking-widest text-secondary">
-                <TextLink to={'/'}>About</TextLink>
-                <TextLink to={'/projects'}>Projects</TextLink>
-                <TextLink to={'/resume'}>Resume</TextLink>
-                <TextLink to={'/uses'}>Uses</TextLink>
+                <TextLink
+                  to={'/'}
+                  className={'umami--click--header-About-link'}
+                >
+                  About
+                </TextLink>
+                <TextLink
+                  to={'/projects'}
+                  className={'umami--click--header-Projects-link'}
+                  i
+                >
+                  Projects
+                </TextLink>
+                <TextLink
+                  to={'/resume'}
+                  className={'umami--click--header-Resume-link'}
+                >
+                  Resume
+                </TextLink>
+                <TextLink
+                  to={'/uses'}
+                  className={'umami--click--header-Uses-link'}
+                >
+                  Uses
+                </TextLink>
               </div>
             </div>
           </div>
@@ -94,6 +128,7 @@ const Header = ({ siteTitle }) => {
           <div className="sm:hidden pl-4 sm:pl-8 m-auto text-secondary hover:opacity-75 text-xl">
             <FaBars
               alt={'Open Menu'}
+              className={'umami--click--header-mobileMenu-open-icon'}
               onClick={() => setIsMobNavOpen(!isMobNavOpen)}
             />
           </div>

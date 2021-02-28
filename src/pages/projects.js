@@ -1,7 +1,6 @@
 import React from 'react';
 import SEO from '../components/seo';
 import App from '../components/app';
-import { Link } from 'gatsby';
 import PaginateNavigate from '../components/PaginateNavigate';
 import PropTypes from 'prop-types';
 
@@ -73,7 +72,10 @@ const ProjectBlock = ({ title, desc, link }) => {
   return (
     <div className={'mb-12'}>
       {link ? (
-        <a className={'text-sm font-medium no-underline'} href={link}>
+        <a
+          className={`text-sm font-medium no-underline umami--click--/projects-${title}-header-link`}
+          href={link}
+        >
           <h3 className="mb-4">{title}</h3>
         </a>
       ) : (
@@ -82,7 +84,10 @@ const ProjectBlock = ({ title, desc, link }) => {
 
       <p className="mb-2">{desc}</p>
       {link && (
-        <a className={'text-sm font-medium'} href={link}>
+        <a
+          className={`text-sm font-medium umami--click--/projects-${title}-visit-site-link`}
+          href={link}
+        >
           Visit site →
         </a>
       )}

@@ -44,7 +44,7 @@ const Footer = () => {
       <div className="max-w-screen-xl px-4 py-8 mt-8 sm:px-6 lg:pl-40 lg:pr-16 lg:py-12 sm:flex sm:items-center sm:justify-between">
         <div className="my-auto sm:order-2">
           <a href="mailto:paul@paulchoi.dev">
-            <div className="text-secondary font-medium flex justify-center items-center underline hover:opacity-75 transition duration-150">
+            <div className="text-secondary font-medium flex justify-center items-center underline hover:opacity-75 transition duration-150 umami--click--footer-Say-Hi-email-link">
               <FaEnvelope />
               <div className="ml-2">Say hi! 👋</div>
             </div>

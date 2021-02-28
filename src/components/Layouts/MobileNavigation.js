@@ -21,34 +21,34 @@ const MobileNavigation = ({ handleModalClose }) => {
     >
       <div className="flex flex-row text-2xl justify-end py-6 mb-8">
         <div onClick={() => handleModalClose()}>
-          <FaTimes className="m-4" />
+          <FaTimes className="m-4 umami--click--header-mobileMenu-close-icon" />
         </div>
       </div>
       <div className="px-4 flex flex-col text-3xl">
         <Link
           to={'/'}
-          className="mb-8 no-underline"
+          className="mb-8 no-underline umami--click--mobMenu-About-link"
           onClick={() => handleModalClose()}
         >
           ABOUT
         </Link>
         <Link
           to={'/projects'}
-          className="mb-8 no-underline"
+          className="mb-8 no-underline umami--click--mobMenu-Projects-link"
           onClick={() => handleModalClose()}
         >
           PROJECTS
         </Link>
         <Link
           to={'/resume'}
-          className="mb-8 no-underline"
+          className="mb-8 no-underline umami--click--mobMenu-Resume-link"
           onClick={() => handleModalClose()}
         >
           RESUME
         </Link>
         <Link
           to={'/uses'}
-          className="mb-8 no-underline"
+          className="mb-8 no-underline umami--click--mobMenu-Uses-link"
           onClick={() => handleModalClose()}
         >
           USES
@@ -113,6 +113,10 @@ links.map((link) =>
       url={link.url}
       type={link.text}
       svgPath={link.svgPath}
+      onClick={() =>
+        // eslint-disable-next-line no-undef
+        umami(`mobMenu-${link.text}-icon`)
+      }
     />,
   ),
 );
