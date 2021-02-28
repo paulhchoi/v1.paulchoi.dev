@@ -62,7 +62,7 @@ const UsesPage = () => (
             'NextDNS',
             'Signal',
             <>
-              <a href={'https://pchoi.me/gpg'}>GPG key</a>: 0xD9DA860C17AE0196
+              <a href={'https://pchoi.me/gpg'}>GPG key</a>: 0xEFBACD149999D685
             </>,
           ]}
         />
