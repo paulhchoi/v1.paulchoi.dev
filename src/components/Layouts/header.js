@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import { FaBars, FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaBars } from 'react-icons/fa';
 import { Icon } from '../Icon/Icon';
 import HeadshotImage from '../headshotImage';
 import { css } from '@emotion/core';
@@ -11,36 +11,16 @@ import TextLink from '../Link/TextLink';
 import MobileNavigation from './MobileNavigation';
 import Headroom from 'react-headroom';
 import { ThemeToggle } from '../../utils/themeToggle';
+import { socialLinksData } from '../../data/data';
 
 // color generation: https://coolors.co/413c58-a3c4bc-bfd7b5-e7efc5-f2dda4
 
 const Header = ({ siteTitle }) => {
   const [isMobNavOpen, setIsMobNavOpen] = React.useState(false);
 
-  const links = [
-    {
-      text: 'linkedin',
-      url: 'https://www.linkedin.com/in/paulhchoi',
-      svgPath: <FaLinkedin alt={'LinkedIn Icon'} />,
-      hideOnMobile: false,
-    },
-    {
-      text: 'github',
-      url: 'https://github.com/paulhchoi',
-      svgPath: <FaGithub alt={'Github Icon'} />,
-      hideOnMobile: true,
-    },
-    {
-      text: 'email',
-      url: 'mailto:paul@paulchoi.dev',
-      svgPath: <FaEnvelope alt={'Envelope Icon'} />,
-      hideOnMobile: true,
-    },
-  ];
-
   const linksGen = [];
 
-  links.map((link) =>
+  socialLinksData.map((link) =>
     linksGen.push(
       <Icon
         key={link.text}

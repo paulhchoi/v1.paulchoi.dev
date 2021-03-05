@@ -1,13 +1,8 @@
 import React, { useLayoutEffect } from 'react';
 import { Link } from 'gatsby';
-import {
-  FaEnvelope,
-  FaGithub,
-  FaLinkedin,
-  FaTimes,
-  FaTwitter,
-} from 'react-icons/fa';
+import { FaTimes } from 'react-icons/fa';
 import { Icon } from '../Icon/Icon';
+import { socialLinksData } from '../../data/data';
 import PropTypes from 'prop-types';
 
 const MobileNavigation = ({ handleModalClose }) => {
@@ -77,36 +72,9 @@ function useLockBodyScroll() {
   }, []);
 }
 
-const links = [
-  {
-    text: 'linkedin',
-    url: 'https://www.linkedin.com/in/paulhchoi',
-    svgPath: <FaLinkedin alt={'LinkedIn Icon'} />,
-    hideOnMobile: false,
-  },
-  {
-    text: 'github',
-    url: 'https://github.com/paulhchoi',
-    svgPath: <FaGithub alt={'Github Icon'} />,
-    hideOnMobile: true,
-  },
-  {
-    text: 'twitter',
-    url: 'https://twitter.com/paulchoidev',
-    svgPath: <FaTwitter alt={'Twitter Icon'} />,
-    hideOnMobile: true,
-  },
-  {
-    text: 'email',
-    url: 'mailto:paul@paulchoi.dev',
-    svgPath: <FaEnvelope alt={'Envelope Icon'} />,
-    hideOnMobile: true,
-  },
-];
-
 const linksGen = [];
 
-links.map((link) =>
+socialLinksData.map((link) =>
   linksGen.push(
     <Icon
       key={link.text}
