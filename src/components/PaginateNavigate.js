@@ -7,23 +7,19 @@ const PaginateNavigate = ({ prevText, prevLink, nextText, nextLink }) => {
   return (
     <>
       <div className="flex-1" />
-      <div className="flex flex-row max-w-xl justify-center space-x-12 mt-24 text-xl text-secondary">
+      <div className="flex flex-row justify-center max-w-xl mt-24 space-x-12 text-xl text-secondary">
         {prevText && prevLink && (
           <Link
             to={prevLink}
             className={'flex flex-inline items-center no-underline'}
-            // eslint-disable-next-line no-undef
-            onClick={() => umami(`pageNav-${prevText}-link`)}
           >
-            <FaArrowLeft className="mr-4 opacity-75 text-sm" /> {prevText}{' '}
+            <FaArrowLeft className="mr-4 text-sm opacity-75" /> {prevText}{' '}
           </Link>
         )}
         {nextText && nextLink && (
           <Link
             to={nextLink}
             className={'flex flex-inline items-center no-underline'}
-            // eslint-disable-next-line no-undef
-            onClick={() => umami(`pageNav-${nextText}-link`)}
           >
             {nextText} <FaArrowRight className={'ml-4 opacity-75 text-sm'} />
           </Link>
