@@ -1,11 +1,9 @@
-const tailwindcss = require('tailwindcss');
-
+/* eslint-disable no-undef */
+// eslint-disable-next-line no-undef
 module.exports = {
   plugins: [
-    tailwindcss('./tailwind.config.js'),
+    require('postcss-import'),
+    require('tailwindcss'),
     require('autoprefixer'),
-    require('cssnano')({
-      preset: 'default',
-    }),
   ],
 };

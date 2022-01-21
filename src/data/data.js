@@ -14,7 +14,7 @@ export const socialLinksData = [
   },
   {
     text: 'twitter',
-    url: 'https://twitter.com/pchoi789',
+    url: 'https://twitter.com/paulchoidev',
     svgPath: <FaTwitter />,
   },
   {

@@ -1,4 +1,6 @@
+// eslint-disable-next-line no-undef
 module.exports = {
+  content: ['./src/**/*.{html,js}'],
   darkMode: 'class',
   theme: {
     extend: {
@@ -17,7 +19,7 @@ module.exports = {
       },
     },
   },
-  variants: {},
-  plugins: [require('@tailwindcss/ui')],
+  // eslint-disable-next-line no-undef
+  // plugins: [require('@tailwindcss/ui')],
   purge: false,
 };

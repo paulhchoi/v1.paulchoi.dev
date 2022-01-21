@@ -9,7 +9,7 @@ import PaginateNavigate from '../components/PaginateNavigate';
 const UsesPage = () => (
   <App>
     <SEO title="Uses" />
-    <h2 className="mb-6 font-semibold text-2xl">Uses</h2>
+    <h2 className="mb-6 text-2xl font-semibold">Uses</h2>
 
     <div className="text-lg leading-8">
       <p className="max-w-xl mb-16">
@@ -24,8 +24,8 @@ const UsesPage = () => (
           title={'Desktop Apps'}
           list={[
             'iTerm 2 w/ ohmyzsh & power10k',
+            'Visual Studio Code',
             'Sublime 3',
-            'IntelliJ & Android Studio',
           ]}
         />
 
@@ -35,9 +35,8 @@ const UsesPage = () => (
             'Homebrew',
             'Alfred',
             'BetterTouchTools',
-            'Rocket',
+            'Bartender',
             'Amphetamine',
-            'iStats Menus',
           ]}
         />
 
@@ -46,7 +45,7 @@ const UsesPage = () => (
           list={[
             'OmniFocus, for personal GTD',
             'Trello, for team project management',
-            'Notion, for 2nd-brain / persistent notes',
+            'Obsidian, for 2nd-brain / persistent notes',
             '30-min & 5-min hour glasses, for analog pomodoro',
             'Too many sketchpads & post-its',
           ]}
@@ -59,7 +58,7 @@ const UsesPage = () => (
             'YubiKeys',
             'Firefox w/ DuckDuckGo',
             'ProtonMail & AnonAddy',
-            'NextDNS',
+            'NextDNS & ProtonVPN',
             'Signal',
             <>
               <a href={'https://pchoi.me/gpg'}>PGP key</a>: 0xEFBACD149999D685
@@ -70,9 +69,8 @@ const UsesPage = () => (
         <ListSection
           title={'Desk Setup'}
           list={[
-            '2015 15" MacBook Pro (2.3 GHz i7, 16GB DDR3)',
-            '27" Apple Thunderbolt Display',
-            '27" Asus Monitor',
+            '2021 16" MacBook Pro (M1 Max, 32GB DDR5)',
+            'Two 27" Monitors',
             'IKEA Jerker desk (thanks Kev!)',
             'Lily58 split mechanical keyboard w/ Zelios V2 switches',
             'Plants on plants on plants',
@@ -84,7 +82,6 @@ const UsesPage = () => (
           list={[
             'Sony h.ear noise-cancelling headphones',
             'Blue Yeti microphone',
-            '27" Asus Monitor',
             'Samsung T5 1TB external',
             'Creality Ender 3 3D Printer',
           ]}
@@ -92,16 +89,12 @@ const UsesPage = () => (
 
         <ListSection
           title={'Currently Playing'}
-          list={[
-            'Animal Crossing: New Horizons',
-            'Chess.com',
-            '"Really Bad Chess" by Zach Gage',
-          ]}
+          list={['Wordle', 'Leetcode & Project Euler', 'Cities & Skylines']}
         />
 
         <ListSection
           title={'Currently Reading'}
-          list={['The Innovators by Walter Isaacson']}
+          list={['Kafka on the Shore by Haruki Murakami']}
         />
       </div>
     </div>

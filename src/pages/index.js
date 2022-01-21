@@ -21,8 +21,8 @@ export default HomePage;
 
 const Intro = () => {
   return (
-    <div className="max-w-xl text-lg text-primary leading-8">
-      <h2 className="mb-6 font-semibold text-2xl">
+    <div className="max-w-xl text-lg leading-8 text-primary">
+      <h2 className="mb-6 text-2xl font-semibold">
         👋 Hey there, I&apos;m Paul!
       </h2>
       <p className="mb-6">
@@ -33,8 +33,15 @@ const Intro = () => {
         <BaseLink to={'https://temple.edu'}>Temple University</BaseLink> in 2019
         with a BS in Computer Science and a minor in Data Science, and I&apos;m
         currently working as a Software Engineer for{' '}
-        <BaseLink to={'https://www.qurateretailgroup.com/'}> QVC</BaseLink> on
-        their Android and iOS apps.
+        <BaseLink to={'https://hello.getsidecar.com/'}>Sidecar</BaseLink> on
+        their Reporting and Analytics platforms.{' '}
+        <i>
+          (Formerly at{' '}
+          <BaseLink to={'https://www.qurateretailgroup.com/'}>
+            QVC x HSN
+          </BaseLink>{' '}
+          on their Android and iOS apps.)
+        </i>
       </p>
       <p className="mb-6">
         Since 2016, I&apos;ve been the Director of Digital Technologies for{' '}
@@ -66,7 +73,7 @@ export const BaseLink = ({ to, children, ...other }) => {
       href={to}
       target="_blank"
       rel="noopener noreferrer"
-      className="underline font-bold hover:opacity-75 transition duration-150"
+      className="font-bold underline transition duration-150 hover:opacity-75"
       onClick={() =>
         // eslint-disable-next-line no-undef
         umami(`/-${children}-link`)

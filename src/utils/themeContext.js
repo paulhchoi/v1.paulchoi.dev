@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { createContext, useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 
-export const ThemeContext = React.createContext();
+export const ThemeContext = createContext();
 
 export const ThemeProvider = ({ initialTheme, children }) => {
-  const [theme, setTheme] = React.useState(getInitialTheme);
+  const [theme, setTheme] = useState(getInitialTheme);
 
   const rawSetTheme = (theme) => {
     const root = window.document.documentElement;
@@ -20,7 +20,7 @@ export const ThemeProvider = ({ initialTheme, children }) => {
     rawSetTheme(initialTheme);
   }
 
-  React.useEffect(() => {
+  useEffect(() => {
     rawSetTheme(theme);
   }, [theme]);
 
