@@ -45,7 +45,7 @@ const getInitialTheme = () => {
   }
 
   // fallback default theme
-  return 'light';
+  return 'dark';
 };
 
 ThemeProvider.propTypes = {
