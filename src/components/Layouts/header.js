@@ -10,7 +10,6 @@ import { Link } from 'gatsby';
 import TextLink from '../Link/TextLink';
 import MobileNavigation from './MobileNavigation';
 import Headroom from 'react-headroom';
-import { ThemeToggle } from '../../utils/themeToggle';
 import { socialLinksData } from '../../data/data';
 
 // color generation: https://coolors.co/413c58-a3c4bc-bfd7b5-e7efc5-f2dda4
@@ -99,9 +98,6 @@ const Header = ({ siteTitle }) => {
             </div>
           </div>
           <div className="flex-grow" />
-          <div className="px-2 my-auto sm:mb-8 lg:mb-12 sm:px-8">
-            <ThemeToggle />
-          </div>
           <div className="justify-center hidden my-auto space-x-4 sm:flex sm:mb-8 lg:mb-12 sm:space-x-8">
             {linksGen}
           </div>
