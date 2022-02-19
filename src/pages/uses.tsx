@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import SEO from '../components/seo';
 import App from '../components/app';
@@ -21,80 +20,91 @@ const UsesPage = () => (
       </p>
       <div className={'max-w-6xl grid xl:grid-cols-2 gap-4'}>
         <ListSection
-          title={'Desktop Apps'}
+          title={'Coding'}
           list={[
-            'iTerm 2 w/ ohmyzsh & power10k',
-            'Visual Studio Code',
-            'Sublime 3',
-          ]}
-        />
-
-        <ListSection
-          title={'Helper Utils'}
-          list={[
-            'Homebrew',
-            'Alfred',
-            'BetterTouchTools',
-            'Bartender',
-            'Amphetamine',
+            'Editor: Visual Studio Code',
+            'Theme: Monakai Pro',
+            'Terminal: iTerm 2 (zsh & power10k)',
           ]}
         />
 
         <ListSection
           title={'Productivity'}
           list={[
-            'OmniFocus, for personal GTD',
-            'Trello, for team project management',
-            'Obsidian, for 2nd-brain / persistent notes',
-            '30-min & 5-min hour glasses, for analog pomodoro',
-            'Too many sketchpads & post-its',
+            'Personal Tasks: OmniFocus',
+            'Team Project Management: Trello',
+            'Persistent Notes: Obsidian',
+          ]}
+        />
+
+        <ListSection
+          title={'Computer / Office'}
+          list={[
+            '16" MacBook Pro (2021)',
+            'Lily58 split mechanical keyboard w/ Zelios V2 switches',
+            'Logitech MX Master 3 Mouse',
+            'IKEA Jerker desk',
+            'Ergodriven Topo standing mat',
+            'Plants on plants on plants',
           ]}
         />
 
         <ListSection
           title={'Privacy'}
           list={[
-            '1Password',
-            'YubiKeys',
+            '1Password & YubiKeys',
             'Firefox w/ DuckDuckGo',
             'ProtonMail & AnonAddy',
             'NextDNS & ProtonVPN',
             'Signal',
             <>
-              <a href={'https://pchoi.me/gpg'}>PGP key</a>: 0xEFBACD149999D685
+              <a href={'https://pchoi.me/pgp'}>PGP key</a>: 0xEFBACD149999D685
             </>,
           ]}
         />
 
         <ListSection
-          title={'Desk Setup'}
+          title={'Other Software'}
           list={[
-            '2021 16" MacBook Pro (M1 Max, 32GB DDR5)',
-            'Two 27" Monitors',
-            'IKEA Jerker desk (thanks Kev!)',
-            'Lily58 split mechanical keyboard w/ Zelios V2 switches',
-            'Plants on plants on plants',
+            'Alfred',
+            'Rectangle',
+            'Vimium',
+            'Fantastical',
+            <>
+              <a href={'https://pchoi.me/spotify'}>Spotify</a>
+            </>,
           ]}
         />
-
         <ListSection
-          title={'Extra Accessories'}
+          title={'Other Tech'}
           list={[
             'Sony h.ear noise-cancelling headphones',
             'Blue Yeti microphone',
-            'Samsung T5 1TB external',
-            'Creality Ender 3 3D Printer',
+            'Razor Kiyo webcam',
+            'Samsung T5 1TB external SSD',
+            'Creality Ender 3 3D printer',
           ]}
         />
 
         <ListSection
-          title={'Currently Playing'}
-          list={['Wordle', 'Leetcode & Project Euler', 'Cities & Skylines']}
+          title={'Browser Extensions'}
+          list={[
+            'Vimium',
+            'Temporary Containers',
+            'uBlock Origin',
+            'Decentraleyes',
+            'HTTPS Everywhere',
+          ]}
         />
 
         <ListSection
-          title={'Currently Reading'}
-          list={['Kafka on the Shore by Haruki Murakami']}
+          title={'Currently Playing / Reading'}
+          list={[
+            'Wordle',
+            'Leetcode & Project Euler',
+            'Cities & Skylines',
+            'Kafka on the Shore by Haruki Murakami',
+          ]}
         />
       </div>
     </div>

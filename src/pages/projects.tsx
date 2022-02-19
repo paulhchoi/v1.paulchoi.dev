@@ -7,9 +7,9 @@ import PropTypes from 'prop-types';
 const ProjectsPage = () => (
   <App>
     <SEO title="Projects" />
-    <h2 className="mb-6 font-semibold text-2xl">Projects</h2>
+    <h2 className="mb-6 text-2xl font-semibold">Projects</h2>
 
-    <div className="max-w-xl text-lg text-primary leading-8">
+    <div className="max-w-xl text-lg leading-8 text-primary">
       <p className="mb-16">
         These are few of the projects I&apos;ve worked on over the years. Most
         of them are closed-source, but if you&apos;d like any clarification,

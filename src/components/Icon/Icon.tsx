@@ -8,8 +8,7 @@ export const Icon = ({ url, type, svgPath }) => {
       target="_blank"
       rel="noopener noreferrer"
       className="text-xl text-secondary hover:opacity-75"
-      alt={type}
-      aria-labelledby={type}
+      aria-label={type}
     >
       {svgPath}
     </a>
