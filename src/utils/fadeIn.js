@@ -1,8 +1,7 @@
 // FadeIn.js
 import React from 'react';
 import PropTypes from 'prop-types';
-import { keyframes } from '@emotion/core';
-import styled from '@emotion/styled';
+import styled from 'styled-components';
 
 const fadeIn = keyframes`
   from {

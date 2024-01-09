@@ -18,7 +18,7 @@ const ProjectsPage = () => (
       <ProjectBlock
         title={'Metrophilly.org'}
         desc={
-          'A static site built for the non-profit Metro using React & Gatsby,\n' +
+          'A static site built for the non-profit Metro using React/Next.js,\n' +
           '        Tailwind CSS, and Sanity CMS. Initially developed in mid-2019.'
         }
         link={'https://www.metrophilly.org'}
@@ -47,7 +47,7 @@ const ProjectsPage = () => (
           'The admin platform built for Genesis Youth Ministries,\n' +
           '      initially developed in PHP by Ezra Kwak. Development contributions\n' +
           '      included overhauling the event registration system to accept PayPal\n' +
-          '      payments using their Instant Payment Notification API'
+          '      payments using their Instant Payment Notification API.'
         }
         link={'https://pfc.us/obershel'}
       />

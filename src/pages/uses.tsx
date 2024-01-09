@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import SEO from '../components/seo';
 import App from '../components/app';
-import styled from '@emotion/styled';
+import styled from 'styled-components';
 import PaginateNavigate from '../components/PaginateNavigate';
 
 const UsesPage = () => (
@@ -33,7 +33,7 @@ const UsesPage = () => (
           list={[
             'Personal Tasks: OmniFocus',
             'Team Project Management: Trello',
-            'Persistent Notes: Obsidian',
+            'Persistent Notes: Apple Notes & Notion',
           ]}
         />
 
@@ -78,7 +78,7 @@ const UsesPage = () => (
         <ListSection
           title={'Other Tech'}
           list={[
-            'Sony h.ear noise-cancelling headphones',
+            'Apple AirPods Pro',
             'Blue Yeti microphone',
             'Razor Kiyo webcam',
             'Samsung T5 1TB external SSD',
@@ -100,10 +100,11 @@ const UsesPage = () => (
         <ListSection
           title={'Currently Playing / Reading'}
           list={[
-            'Wordle',
-            'Leetcode & Project Euler',
-            'Cities & Skylines',
-            'Kafka on the Shore by Haruki Murakami',
+            'Coding: Leetcode & Project Euler',
+            'Reading: Kafka on the Shore by Haruki Murakami & Think Again by Adam Grant',
+            'Board Game: Coup',
+            'PS5: Gran Turismo 7 & Warzone',
+            'Steam: Factorio',
           ]}
         />
       </div>

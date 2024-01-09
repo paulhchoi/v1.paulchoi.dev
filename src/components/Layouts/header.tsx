@@ -4,7 +4,6 @@ import React from 'react';
 import { FaBars } from 'react-icons/fa';
 import { Icon } from '../Icon/Icon';
 import HeadshotImage from '../headshotImage';
-import { css } from '@emotion/core';
 import { Link } from 'gatsby';
 
 import TextLink from '../Link/TextLink';
@@ -43,11 +42,7 @@ const Header = ({ siteTitle }) => {
         <div className="flex flex-row max-w-screen-xl px-4 py-8 bg-primary sm:px-6 lg:py-12 lg:px-16">
           <div className="flex flex-row sm:flex-col lg:flex-row">
             <div
-              className="w-10 h-10 my-auto rounded-full sm:h-16 sm:w-16 lg:h-24 lg:w-24 bg-accent"
-              css={css`
-                -webkit-transform: scaleX(-1);
-                transform: scaleX(-1);
-              `}
+              className="w-10 h-10 my-auto rounded-full sm:h-16 sm:w-16 lg:h-24 lg:w-24 bg-accent -scale-x-100"
             >
               <Link
                 to={'/'}
@@ -78,7 +73,6 @@ const Header = ({ siteTitle }) => {
                 <TextLink
                   to={'/projects'}
                   className={'umami--click--header-Projects-link'}
-                  i
                 >
                   Projects
                 </TextLink>

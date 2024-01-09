@@ -32,16 +32,7 @@ const Intro = () => {
         I&apos;ve graduated from{' '}
         <BaseLink to={'https://temple.edu'}>Temple University</BaseLink> in 2019
         with a BS in Computer Science and a minor in Data Science, and I&apos;m
-        currently working as a Software Engineer for{' '}
-        <BaseLink to={'https://hello.getsidecar.com/'}>Sidecar</BaseLink> on
-        their Reporting and Analytics platforms.{' '}
-        <i>
-          (Formerly at{' '}
-          <BaseLink to={'https://www.qurateretailgroup.com/'}>
-            QVC x HSN
-          </BaseLink>{' '}
-          on their Android and iOS apps.)
-        </i>
+        currently actively searching for roles as a Software Engineer.
       </p>
       <p className="mb-6">
         Since 2016, I&apos;ve been the Director of Digital Technologies for{' '}
@@ -61,7 +52,7 @@ const Intro = () => {
           LinkedIn
         </BaseLink>
         , or by sending me an{' '}
-        <BaseLink to={'mailto:paul@paulchoi.dev'}>email</BaseLink>.
+        <BaseLink to={'mailto:paul@paulchoi.dev'}>email</BaseLink>. I'm looking forward to hearing from you!
       </p>
     </div>
   );
